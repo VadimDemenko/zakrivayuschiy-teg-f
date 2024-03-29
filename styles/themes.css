@@ -56,3 +56,59 @@
   --color-label: #000;
   --color-bg-button: var(--accent-color);
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font-family: "Inter-Variable", sans-serif;
+    --accent-font-family: "PressStart2P", fantasy;
+    --main-font-weight: 400;
+    --accent-font-weight: 700;
+    --background-color: #ffffff;
+    --accent-color: #000000;
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    --color-label: #fff;
+    --color-bg-button: var(--background-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font-family: "Inter-Variable", sans-serif;
+    --accent-font-family: "PressStart2P", fantasy;
+    --main-font-weight: 465;
+    --accent-font-weight: 785;
+    --background-color: #000000;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #000 0px,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #000 0px,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(180deg, #007f0c 0%, #004306 100%);
+    --color-label: #000;
+    --color-bg-button: var(--accent-color);
+  }
+}

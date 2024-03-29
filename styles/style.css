@@ -58,7 +58,7 @@
 
 .header__theme-menu {
   margin-block-start: 25px;
-  margin-block-end: 23px;
+  margin-block-end: 21px;
   margin-inline-start: 15px;
 }
 
@@ -131,7 +131,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 47px;
 }
 
 .section__card {
@@ -150,7 +150,7 @@
 }
 
 .section__image-card {
-  width: clamp(22.3125rem, 14.7641rem + 32.2066vw, 43.75rem);
+  min-width: clamp(22.3125rem, 14.7641rem + 32.2066vw, 43.75rem);
   position: relative;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
@@ -237,7 +237,6 @@
   justify-content: flex-end;
   margin-block-end: 25px;
   margin-inline-end: 25px;
-  gap: 10px;
 }
 
 .button__text {
@@ -290,12 +289,12 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 14px 19px;
+  padding: 16px 20px;
 }
 
 .floppy {
-  width: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
-  height: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
+  width: 21px;
+  height: 21px;
   mix-blend-mode: difference;
 }
 
@@ -376,5 +375,24 @@ dialog::backdrop {
 @media (width <= 375px) {
   .page {
     width: 100%;
+  }
+
+  .content {
+    gap: 51px;
+  }
+
+  .section__save-button {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+
+  .section__label {
+    top: 20px;
   }
 }
